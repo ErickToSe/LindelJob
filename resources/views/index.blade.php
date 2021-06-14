@@ -1,7 +1,7 @@
 @extends('layouts/basicHead')
 
 @section('tittle')
-   <title>Main</title>
+   <title>Art Shop</title>
 @endsection
 
 @section('content')
@@ -22,7 +22,7 @@
                      </div>
                      <form class="navbar-form navbar-left web-sh">
                         <div class="form">
-                           <input type="text" class="form-control" placeholder="Search for products or companies">
+                           <input type="text" class="form-control" placeholder="Busca tu retrato de interes...">
                         </div>
                      </form>
                   </div>
@@ -31,24 +31,32 @@
                         <div class="login-sr">
                            <div class="login-signup">
                               <ul>
-                                 <li><a href="#">Login</a></li>
-                                 <li><a class="custom-b" href="#">Sign up</a></li>
+                                 @if (Route::has('login'))
+                                    @auth 
+                                       <!--/.Requiere vista de perfil................................................................................................ --> 
+                                       <li><a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 underline">Mi perfil.</a></li>
+                                    @else
+                                       <li><a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Log in</a></li>
+                                       @if (Route::has('register'))
+                                          <li><a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline custom-b">Sing In</a></li>
+                                       @endif
+                                    @endauth
+                                 @endif
                               </ul>
                            </div>
                         </div>
                         <div class="help-r hidden-xs">
                            <div class="help-box">
                               <ul>
-                                 <li> <a data-toggle="modal" data-target="#myModal" href="#"> <span>Change</span> <img src="images/flag.png" alt="" /> </a> </li>
-                                 <li> <a href="#"><img class="h-i" src="images/help-icon.png" alt="" /> Help </a> </li>
+                                 <li> <a href="#"><img class="h-i" src="images/help-icon.png" alt="" /> Ayuda </a> </li>
                               </ul>
                            </div>
                         </div>
                         <div class="nav-b hidden-xs">
                            <div class="nav-box">
                               <ul>
-                                 <li><a href="howitworks.html">How it works</a></li>
-                                 <li><a href="about-us.html">Chamb for Business</a></li>
+                                 <li><a href="howitworks.html">Como trabajamos</a></li>
+                                 <li><a href = "{{ url('/Sobre-Nosotros') }}">Sobre nosotros</a></li>
                               </ul>
                            </div>
                         </div>
@@ -59,27 +67,9 @@
             <!--/.container-fluid --> 
          </nav>
       </header>
-      <!-- Modal -->
-      <div class="modal fade lug" id="myModal" role="dialog">
-         <div class="modal-dialog">
-            <!-- Modal content-->
-            <div class="modal-content">
-               <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Change</h4>
-               </div>
-               <div class="modal-body">
-                  <ul>
-                     <li><a href="#"><img src="images/flag-up-1.png" alt="" /> United States</a></li>
-                     <li><a href="#"><img src="images/flag-up-2.png" alt="" /> France </a></li>
-                  </ul>
-               </div>
-            </div>
-         </div>
-      </div>
       <div id="sidebar" class="top-nav">
          <ul id="sidebar-nav" class="sidebar-nav">
-            <li><a href="#">Help</a></li>
+            <li><a href="#">Ayuda</a></li>
             <li><a href="howitworks.html">How it works</a></li>
             <li><a href="#">chamb for Business</a></li>
          </ul>
@@ -89,27 +79,30 @@
             <div class="container">
                <div class="row clearfix">
                   <div class="find-box">
-                     <h1>Find your next product or<br>business partner here.</h1>
-                     <h4>It has never been easier.</h4>
+                     <h1>¡Encuentra facilmente los<br>cuadros que estas buscando!.</h1>
+                     <h4>Buscarlos nunca a sido tan sencillo...</h4>
                      <div class="product-sh">
                         <div class="col-sm-6">
                            <div class="form-sh">
-                              <input type="text" placeholder="Search something you love" >
+                              <input type="text" placeholder="¡Aqui va tu busqueda!" >
                            </div>
                         </div>
                         <div class="col-sm-3">
                            <div class="form-sh">
                               <select class="selectpicker">
-                                 <option>Textiles</option>
-                                 <option>Furniture</option>
-                                 <option>Leather</option>
+                                 <option>Barroco</option>
+                                 <option>Cubismo</option>
+                                 <option>Realismo</option>
+                                 <option>Impresionismo</option>
+                                 <option>Surrealismo</option>
+                                 <option>Postimpresionismo</option>
                               </select>
                            </div>
                         </div>
                         <div class="col-sm-3">
-                           <div class="form-sh"> <a class="btn" href="#">Search</a> </div>
+                           <div class="form-sh"> <a class="btn" href="#">Buscar</a> </div>
                         </div>
-                        <p>Or simply<a href="#"> click here </a> and get inspired!</p>
+                        <p>¡O simplemente<a href="#">  HAS CLICK AQUI </a> para darte alguna idea ;)</p>
                      </div>
                   </div>
                </div>
@@ -179,7 +172,7 @@
                      </a>
                   </div>
                   <div class="categories_link">
-                     <a href="#">Browse all categories here</a>
+                     <a href="#">Adentrate en todas las categorias aqui</a>
                   </div>
                </div>
             </div>
@@ -192,9 +185,9 @@
                   <div class="panel panel-default">
                      <div class="panel-body">
                         <img src="images/xpann-icon.jpg" class="icon-small" alt="">
-                        <h4>“Chamb” Your Business</h4>
-                        <p>Grow easily with chamb. Create free account.
-                           We help expanding your business easily.
+                        <h4>Certificado</h4>
+                        <p>¡La pagina con mejor reputacion 
+                           en ventas de arte en linea!
                         </p>
                      </div>
                   </div>
@@ -203,9 +196,9 @@
                   <div class="panel panel-default">
                      <div class="panel-body">
                         <img src="images/create-icon.jpg" class="icon-small" alt="">
-                        <h4>Create and add</h4>
-                        <p>Grow easily with chamb. Create free account.
-                           We help expanding your business easily.
+                        <h4>Productos de calidad</h4>
+                        <p>Productos hechos con materiales amigables
+                        al ambiente y resistentes.
                         </p>
                      </div>
                   </div>
@@ -214,9 +207,8 @@
                   <div class="panel panel-default">
                      <div class="panel-body">
                         <img src="images/get-icon.jpg" class="icon-small" alt="">
-                        <h4>Get inspired</h4>
-                        <p>Grow easily with chamb. Create free account.
-                           We help expanding your business easily.
+                        <h4>INSPIRATE!</h4>
+                        <p>¡Encuentra el cuadro que mas te identifique!
                         </p>
                      </div>
                   </div>
@@ -230,23 +222,15 @@
                <div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.2s">
                   <div class="exciting_box f_pd">
                      <img src="images/exciting_img-01.jpg" class="icon-small" alt="" />
-                     <h4>Explore <strong>exciting</strong> and exotic products
-                        tailored to you.
+                     <h4>Explora los <strong>facinantes</strong> cuadros hechos por la comunidad
+                        y apoya su talento.
                      </h4>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                        quis nostrud exercitation ullamco laboris..
-                     </p>
                   </div>
-               </div>
+               </div> 
                <div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.4s">
                   <div class="exciting_box l_pd">
                      <img src="images/exciting_img-02.jpg" class="icon-small" alt="" />
                      <h4><strong>List your products on</strong> chamb and grow connections.</h4>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                        quis nostrud exercitation ullamco laboris..
-                     </p>
                   </div>
                </div>
             </div>
@@ -254,27 +238,6 @@
       </div>
       <div class="start-free-box">
          <div class="container">
-            <div class="row">
-               <div class="container">
-                  <div class="main-start-box">
-                     <div class="free-box-a clearfix">
-                        <div class="col-md-6 col-sm-6">
-                           <div class="left-a-f">
-                              <h3>A platform built for scale & expansion. Start for free.</h3>
-                           </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                           <div class="right-a-f">
-                              <p>Over the comming years, way thet business through the web
-                                 works will change at agreat - and chamb is the
-                                 gamebreaker.
-                              </p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
             <div class="row">
                <div class="main-start-box">
                   <div class="bg_img_left"><img src="images/bg_img1.png" alt="#" /></div>
@@ -287,14 +250,13 @@
                         </div>
                         <div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.4s">
                            <div class="right-buyer">
-                              <h4>buyer</h4>
-                              <h2>Empower your factory<br>
-                                 <span>With a new lead Channel</span>
+                              <h4>Vendedor</h4>
+                              <h2>Emprende tu negocio<br>
+                                 <span>con tu usuario de vendedor</span>
                               </h2>
-                              <p>Never worry about sales or income ftom outbound
-                                 channels. with chamb your store is directly
-                                 connected to thousands of interested in your
-                                 products.
+                              <p>*Date a conocer <br>
+                                 *Inova<br>
+                                 *VENDE!
                               </p>
                               <a href="#">Create a buyer account</a>
                            </div>
@@ -310,8 +272,8 @@
                      <div class="supplier clearfix">
                         <div class="col-md-5 col-sm-6">
                            <div class="left-supplier">
-                              <h4>supplier</h4>
-                              <h2>Grow your store <br><span>With a new sales channel</span></h2>
+                              <h4>Comprador</h4>
+                              <h2>Descubre y adquiere <br><span>nuevas piezas de arte</span></h2>
                               <p>Never worry about sales or income ftom outbound
                                  channels. with chamb your store is directly
                                  connected to thousands of interested in your
