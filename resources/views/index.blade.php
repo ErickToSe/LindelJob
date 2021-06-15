@@ -230,7 +230,7 @@
                <div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.4s">
                   <div class="exciting_box l_pd">
                      <img src="images/exciting_img-02.jpg" class="icon-small" alt="" />
-                     <h4><strong>List your products on</strong> chamb and grow connections.</h4>
+                     <h4><strong>Revisa los prouctos en venta</strong> y contacta al vendedor!.</h4>
                   </div>
                </div>
             </div>
@@ -258,7 +258,7 @@
                                  *Inova<br>
                                  *VENDE!
                               </p>
-                              <a href="#">Create a buyer account</a>
+                              <a href="#">Crear cuenta de vendedor</a>
                            </div>
                         </div>
                      </div>
@@ -274,13 +274,12 @@
                            <div class="left-supplier">
                               <h4>Comprador</h4>
                               <h2>Descubre y adquiere <br><span>nuevas piezas de arte</span></h2>
-                              <p>Never worry about sales or income ftom outbound
-                                 channels. with chamb your store is directly
-                                 connected to thousands of interested in your
-                                 products.
+                              <p>Encuentra la pieza de arte que mas <br>
+                                 se adecue a tu estilo y que mas te agrade <br>
+                                 ¡Que esperas!
                               </p>
                               .
-                              <a href="#">Create a supplier account</a>
+                              <a href="#">Crear cuenta de comprador</a>
                            </div>
                         </div>
                         <div class="col-md-7 col-sm-6">
@@ -296,7 +295,7 @@
       </div>
       <div class="products">
          <div class="main-products">
-            <h2>TRENDING PRODUCTS ON CHAMB</h2>
+            <h2>Productos Destacados</h2>
             <div class="product-slidr">
                <div class="slider">
                   <div>
@@ -461,8 +460,8 @@
                      </div>
                      <div class="col-md-4 col-sm-12">
                         <div class="help-box-f">
-                           <h4>Question? Call us on 12 34 56 78 for help</h4>
-                           <p>Easy setup - no payment fees - up to 100 products for free</p>
+                           <h4>¿Preguntas? Llamanos al numero xxx-xxx-xxxx para ayudarte</h4>
+                           <p>Facil configuracion - no pagos de envio - muchos productos en venta</p>
                         </div>
                      </div>
                   </div>
@@ -532,7 +531,7 @@
             <div class="container">
                <div class="row">
                   <div class="col-md-8">
-                     <p><img width="90" src="images/logo.png" alt="#" style="margin-top: -5px;" /> All Rights Reserved. Company Name © 2018</p>
+                     <p><img width="90" src="images/logo.png" alt="#" style="margin-top: -5px;" /> Derechos reservados, Art Shop © 2021</p>
                   </div>
                   <div class="col-md-4">
                      <ul class="list-inline socials">
@@ -557,9 +556,7 @@
                            </a>
                         </li>
                      </ul>
-                     <ul class="right-flag">
-                        <li><a href="#"><img src="images/flag.png" alt="" /> <span>Change</span></a></li>
-                     </ul>
+                     
                   </div>
                </div>
             </div>
