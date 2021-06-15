@@ -79,8 +79,8 @@
             <div class="container">
                <div class="row clearfix">
                   <div class="find-box">
-                     <h1>¡Encuentra facilmente los<br>cuadros que estas buscando!.</h1>
-                     <h4>Buscarlos nunca a sido tan sencillo...</h4>
+                     <h1 style="color:#000" ><b>¡Encuentra facilmente los<br>cuadros que estas buscando!.</b></h1>
+                     <h4 style="color:#000" ><b>Buscarlos nunca a sido tan sencillo...</b></h4>
                      <div class="product-sh">
                         <div class="col-sm-6">
                            <div class="form-sh">
@@ -102,7 +102,7 @@
                         <div class="col-sm-3">
                            <div class="form-sh"> <a class="btn" href="#">Buscar</a> </div>
                         </div>
-                        <p>¡O simplemente<a href="#">  HAS CLICK AQUI </a> para darte alguna idea ;)</p>
+                        <p><b>¡O simplemente<a href="#">  HAS CLICK AQUI </a> para darte alguna idea ;</b></p>
                      </div>
                   </div>
                </div>
@@ -449,8 +449,8 @@
                <div class="row">
                   <div class="footer-top clearfix">
                      <div class="col-md-2 col-sm-6">
-                        <h2>Start a free
-                           account today
+                        <h2>¡Comienza tu cuenta
+                           gratuita hoy!
                         </h2>
                      </div>
                      <div class="col-md-6 col-sm-6">
