@@ -18,7 +18,7 @@
                         <span class="icon-bar"></span> 
                         <span class="icon-bar"></span> 
                         </button>
-                        <a href="index.html" class="navbar-brand"><img src="images/logo.png" alt="" /></a>
+                        <a href="{{ url('/') }}" class="navbar-brand"><img src="images/logo.png" alt="" /></a>
                      </div>
                      <form class="navbar-form navbar-left web-sh">
                         <div class="form">
@@ -172,7 +172,7 @@
                      </a>
                   </div>
                   <div class="categories_link">
-                     <a href="#">Adentrate en todas las categorias aqui</a>
+                     <a href="{{ url('/Categoria') }}">Adentrate en todas las categorias aqui</a>
                   </div>
                </div>
             </div>

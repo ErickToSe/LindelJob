@@ -18,7 +18,7 @@
                         <span class="icon-bar"></span> 
                         <span class="icon-bar"></span> 
                         </button>
-                        <a href="index.html" class="navbar-brand"><img src="../images/logo.png" alt="" /></a>
+                        <a href="{{ url('/') }}" class="navbar-brand"><img src="../images/logo.png" alt="" /></a>
                      </div>
                      <form class="navbar-form navbar-left web-sh">
                         <div class="form">
@@ -39,16 +39,15 @@
                         <div class="help-r hidden-xs">
                            <div class="help-box">
                               <ul>
-                                 <li> <a data-toggle="modal" data-target="#myModal" href="#"> <span>Change</span> <img src="../images/flag.png" alt="" /> </a> </li>
-                                 <li> <a href="#"><img class="h-i" src="../images/help-icon.png" alt="" /> Help </a> </li>
+                                 <li> <a href="#"><img class="h-i" src="../images/help-icon.png" alt="" /> Ayuda </a> </li>
                               </ul>
                            </div>
                         </div>
                         <div class="nav-b hidden-xs">
                            <div class="nav-box">
                               <ul>
-                                 <li><a href="howitworks.html">How it works</a></li>
-                                 <li><a href="about-us.html">Chamb for Business</a></li>
+                                 <li><a href="howitworks.html">Como trabajamos</a></li>
+                                 <li><a href="{{ url('/Sobre-Nosotros') }}">Sobre nosotros</a></li>
                               </ul>
                            </div>
                         </div>
@@ -59,27 +58,9 @@
             <!--/.container-fluid --> 
          </nav>
       </header>
-      <!-- Modal -->
-      <div class="modal fade lug" id="myModal" role="dialog">
-         <div class="modal-dialog">
-            <!-- Modal content-->
-            <div class="modal-content">
-               <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Change</h4>
-               </div>
-               <div class="modal-body">
-                  <ul>
-                     <li><a href="#"><img src="../images/flag-up-1.png" alt="" /> United States</a></li>
-                     <li><a href="#"><img src="../images/flag-up-2.png" alt="" /> France </a></li>
-                  </ul>
-               </div>
-            </div>
-         </div>
-      </div>
       <div id="sidebar" class="top-nav">
          <ul id="sidebar-nav" class="sidebar-nav">
-            <li><a href="#">Help</a></li>
+            <li><a href="#">Ayuda</a></li>
             <li><a href="#">How it works</a></li>
             <li><a href="#">Chamb for Business</a></li>
          </ul>
@@ -103,14 +84,7 @@
                   <h2>Furniture</h2>
                   <div class="col-md-3 col-sm-4">
                      <div class="furniture-left">
-                        <h3>Filter Products</h3>
-                        <div class="by-box">
-                           <h5>By price</h5>
-                           <div id="slider-range"></div>
-                           <p>
-                              <input type="text" id="amount" readonly style="">
-                           </p>
-                        </div>
+                        <h3>Filtrar productos</h3>
                         <div class="by-com">
                            <h5>By company</h5>
                            <div class="list-b">
@@ -118,128 +92,38 @@
                                  <div class="form-check">
                                     <input id="checkbox1" class="filled-in chk-col-blue" type="checkbox">
                                     <label for="checkbox1">
-                                    Adana Cimento
+                                    Barroco
                                     </label>
                                  </div>
                                  <div class="form-check">
                                     <input id="checkbox2" class="filled-in chk-col-blue" type="checkbox">
                                     <label for="checkbox2">
-                                    Akbank
+                                    Cubismo
                                     </label>
                                  </div>
                                  <div class="form-check">
                                     <input id="checkbox3" class="filled-in chk-col-blue" type="checkbox">
                                     <label for="checkbox3">
-                                    Alvimedica
+                                    Realismo
                                     </label>
                                  </div>
                                  <div class="form-check">
                                     <input id="checkbox4" class="filled-in chk-col-blue" type="checkbox">
                                     <label for="checkbox4">
-                                    Arcelik
+                                    Impresionismo
                                     </label>
                                  </div>
                                  <div class="form-check">
                                     <input id="checkbox5" class="filled-in chk-col-blue" type="checkbox">
                                     <label for="checkbox5">
-                                    Askam
+                                    Surrealismo
                                     </label>
                                  </div>
                                  <div class="form-check">
                                     <input id="checkbox6" class="filled-in chk-col-blue" type="checkbox">
                                     <label for="checkbox6">
-                                    Salcano
+                                    Postimpresionismo
                                     </label>
-                                 </div>
-                                 <div class="form-check">
-                                    <input id="checkbox7" class="filled-in chk-col-blue" type="checkbox">
-                                    <label for="checkbox7">
-                                    Sedona
-                                    </label>
-                                 </div>
-                                 <div class="form-check">
-                                    <input id="checkbox8" class="filled-in chk-col-blue" type="checkbox">
-                                    <label for="checkbox8">
-                                    Sisecam
-                                    </label>
-                                 </div>
-                                 <div class="form-check">
-                                    <input id="checkbox9" class="filled-in chk-col-blue" type="checkbox">
-                                    <label for="checkbox9">
-                                    Su Marine Yachts
-                                    </label>
-                                 </div>
-                                 <div class="form-check">
-                                    <input id="checkbox10" class="filled-in chk-col-blue" type="checkbox">
-                                    <label for="checkbox10">
-                                    Beko
-                                    </label>
-                                 </div>
-                                 <div class="form-check">
-                                    <input id="checkbox11" class="filled-in chk-col-blue" type="checkbox">
-                                    <label for="checkbox11">
-                                    Kale Celik Esya
-                                    </label>
-                                 </div>
-                                 <div class="form-check">
-                                    <input id="checkbox12" class="filled-in chk-col-blue" type="checkbox">
-                                    <label for="checkbox12">
-                                    Default
-                                    </label>
-                                 </div>
-                                 <div class="form-check">
-                                    <input id="checkbox13" class="filled-in chk-col-blue" type="checkbox">
-                                    <label for="checkbox13">
-                                    Default
-                                    </label>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="left-list-f">
-                           <div class="panel-group" id="accordion">
-                              <div class="panel panel-default">
-                                 <div class="panel-heading">
-                                    <h4 data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="panel-title expand">
-                                       <div class="right-arrow pull-right"><span class="caret"></span></div>
-                                       <a href="#">Sort by</a>
-                                    </h4>
-                                 </div>
-                                 <div id="collapse1" class="panel-collapse collapse">
-                                    <div class="panel-body">Lorem ipsum dolor sit amet,</div>
-                                 </div>
-                              </div>
-                              <div class="panel panel-default">
-                                 <div class="panel-heading">
-                                    <h4 data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="panel-title expand">
-                                       <div class="right-arrow pull-right"><span class="caret"></span></div>
-                                       <a href="#">Ships from(country)</a>
-                                    </h4>
-                                 </div>
-                                 <div id="collapse2" class="panel-collapse collapse">
-                                    <div class="panel-body">Lorem ipsum dolor sit amet,</div>
-                                 </div>
-                              </div>
-                              <div class="panel panel-default">
-                                 <div class="panel-heading">
-                                    <h4 data-toggle="collapse" data-parent="#accordion" href="#collapse3" class="panel-title expand">
-                                       <div class="right-arrow pull-right"><span class="caret"></span></div>
-                                       <a href="#">Style</a>
-                                    </h4>
-                                 </div>
-                                 <div id="collapse3" class="panel-collapse collapse">
-                                    <div class="panel-body">Lorem ipsum dolor sit amet,</div>
-                                 </div>
-                              </div>
-                              <div class="panel panel-default">
-                                 <div class="panel-heading">
-                                    <h4 data-toggle="collapse" data-parent="#accordion" href="#collapse4" class="panel-title expand">
-                                       <div class="right-arrow pull-right"><span class="caret"></span></div>
-                                       <a href="#">Pattern type</a>
-                                    </h4>
-                                 </div>
-                                 <div id="collapse4" class="panel-collapse collapse">
-                                    <div class="panel-body">Lorem ipsum dolor sit amet,</div>
                                  </div>
                               </div>
                            </div>
@@ -475,20 +359,20 @@
                <div class="row">
                   <div class="footer-top clearfix">
                      <div class="col-md-2 col-sm-6">
-                        <h2>Start a free
-                           account today
+                        <h2>¡Comienza tu cuenta 
+                           gratuita hoy!
                         </h2>
                      </div>
                      <div class="col-md-6 col-sm-6">
                         <div class="form-box">
-                           <input type="text" placeholder="Enter yopur e-mail" />
+                           <input type="text" placeholder="Ingresa tu email" />
                            <button>Continue</button>
                         </div>
                      </div>
                      <div class="col-md-4 col-sm-12">
                         <div class="help-box-f">
-                           <h4>Question? Call us on 12 34 56 78 for help</h4>
-                           <p>Easy setup - no payment fees - up to 100 products for free</p>
+                           <h4>¿Preguntas? Llamanos al numero xxx-xxx-xxxx para ayudarte</h4>
+                           <p>Facil configuracion - no pagos de envio - muchos productos en venta</p>
                         </div>
                      </div>
                   </div>

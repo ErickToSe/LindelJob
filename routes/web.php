@@ -22,7 +22,9 @@ Route::get('/Sobre-Nosotros', function () {
     return view('about-us');
 });
 
-
+Route::get('/Categoria', function () {
+    return view('category');
+});
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
