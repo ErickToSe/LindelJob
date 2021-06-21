@@ -18,7 +18,7 @@
                         <span class="icon-bar"></span> 
                         <span class="icon-bar"></span> 
                         </button>
-                        <a href="index.html" class="navbar-brand"><img src="images/logo.png" alt="" /></a>
+                        <a href="{{ url('/') }}" class="navbar-brand"><img src="images/logo.png" alt="" /></a>
                      </div>
                      <form class="navbar-form navbar-left web-sh">
                         <div class="form">
@@ -55,7 +55,7 @@
                         <div class="nav-b hidden-xs">
                            <div class="nav-box">
                               <ul>
-                                 <li><a href="howitworks.html">Como trabajamos</a></li>
+                                 <li><a href="{{ url('/Tienda') }}">Tienda</a></li>
                                  <li><a href = "{{ url('/Sobre-Nosotros') }}">Sobre nosotros</a></li>
                               </ul>
                            </div>
@@ -230,7 +230,7 @@
                <div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.4s">
                   <div class="exciting_box l_pd">
                      <img src="images/exciting_img-02.jpg" class="icon-small" alt="" />
-                     <h4><strong>List your products on</strong> chamb and grow connections.</h4>
+                     <h4><strong>Compra ese cuadro...</strong> deja que el arte entre en tu hogar.</h4>
                   </div>
                </div>
             </div>
@@ -238,33 +238,6 @@
       </div>
       <div class="start-free-box">
          <div class="container">
-            <div class="row">
-               <div class="main-start-box">
-                  <div class="bg_img_left"><img src="images/bg_img1.png" alt="#" /></div>
-                  <div class="container">
-                     <div class="buyer-box clearfix">
-                        <div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.2s">
-                           <div class="left-buyer">
-                              <img class="img-responsive" src="images/creat_pro.png" alt="#" />
-                           </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.4s">
-                           <div class="right-buyer">
-                              <h4>Vendedor</h4>
-                              <h2>Emprende tu negocio<br>
-                                 <span>con tu usuario de vendedor</span>
-                              </h2>
-                              <p>*Date a conocer <br>
-                                 *Inova<br>
-                                 *VENDE!
-                              </p>
-                              <a href="#">Create a buyer account</a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
             <div class="row">
                <div class="bg_img_right"><img src="images/bg_img1.png" alt="#" /></div>
                <div class="main-start-box">
@@ -274,13 +247,9 @@
                            <div class="left-supplier">
                               <h4>Comprador</h4>
                               <h2>Descubre y adquiere <br><span>nuevas piezas de arte</span></h2>
-                              <p>Never worry about sales or income ftom outbound
-                                 channels. with chamb your store is directly
-                                 connected to thousands of interested in your
-                                 products.
+                              <p>Variedad de tecnicas y tematicas para que encuentres esos cuadros que hacen falta en tu hogar.
                               </p>
-                              .
-                              <a href="#">Create a supplier account</a>
+                              <a href="#">Crear cuenta</a>
                            </div>
                         </div>
                         <div class="col-md-7 col-sm-6">
@@ -296,7 +265,7 @@
       </div>
       <div class="products">
          <div class="main-products">
-            <h2>TRENDING PRODUCTS ON CHAMB</h2>
+            <h2>LO MAS VENDIDO</h2>
             <div class="product-slidr">
                <div class="slider">
                   <div>
