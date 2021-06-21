@@ -10,21 +10,11 @@
          <nav class="navbar navbar-default">
             <div class="container-fluid">
                <div class="row">
-                  <div class="col-md-4 col-sm-12 left-rs">
+                  <div class="col-md-4 col-sm-4 left-rs">
                      <div class="navbar-header">
-                        <button type="button" id="top-menu" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"> 
-                        <span class="sr-only">Navegar</span> 
-                        <span class="icon-bar"></span> 
-                        <span class="icon-bar"></span> 
-                        <span class="icon-bar"></span> 
                         </button>
                         <a href="{{ url('/') }}" class="navbar-brand"><img src="images/logo.png" alt="" /></a>
                      </div>
-                     <form class="navbar-form navbar-left web-sh">
-                        <div class="form">
-                           <input type="text" class="form-control" placeholder="Search for products or companies">
-                        </div>
-                     </form>
                   </div>
                   <div class="col-md-8 col-sm-12">
                      <div class="right-nav">
@@ -34,7 +24,7 @@
                                  @if (Route::has('login'))
                                     @auth 
                                        <!--/.Requiere vista de perfil................................................................................................ --> 
-                                       <li><a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 underline">Mi perfil.</a></li>
+                                       <li><a href="{{ url('/perfil') }}" class="text-sm text-gray-700 underline">Mi perfil.</a></li>
                                     @else
                                        <li><a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Log in</a></li>
                                        @if (Route::has('register'))
@@ -55,8 +45,7 @@
                         <div class="nav-b hidden-xs">
                            <div class="nav-box">
                               <ul>
-                                 <li><a href="howitworks.html">Como funciona.</a></li>
-                                 <li><a href="about-us.html">Art Shop para artistas.</a></li>
+                                 <li><a href="{{ url('/Tienda') }}">Tienda.</a></li>
                               </ul>
                            </div>
                         </div>

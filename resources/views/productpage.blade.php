@@ -1,7 +1,7 @@
 @extends('layouts/basicHead')
 
 @section('tittle')
-   <title>Chamb - Responsive E-commerce HTML5 Template</title>
+   <title>Art Shop - Producto</title>
 @endsection
 
 @section('content')

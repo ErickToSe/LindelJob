@@ -23,11 +23,15 @@ Route::get('/Sobre-Nosotros', function () {
 });
 
 Route::get('/Tienda', function () {
-    return view('store');
+    return view('profile');
 });
 
-Route::get('/Tienda', function () {
-    return view('store');
+Route::get('/Perfil', function () {
+    return view('/userProfile');
+});
+
+Route::get('/Producto', function () {
+    return view('productpage');
 });
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

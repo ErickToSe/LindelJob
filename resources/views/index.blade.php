@@ -12,19 +12,8 @@
                <div class="row">
                   <div class="col-md-4 col-sm-12 left-rs">
                      <div class="navbar-header">
-                        <button type="button" id="top-menu" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"> 
-                        <span class="sr-only">Toggle navigation</span> 
-                        <span class="icon-bar"></span> 
-                        <span class="icon-bar"></span> 
-                        <span class="icon-bar"></span> 
-                        </button>
                         <a href="{{ url('/') }}" class="navbar-brand"><img src="images/logo.png" alt="" /></a>
                      </div>
-                     <form class="navbar-form navbar-left web-sh">
-                        <div class="form">
-                           <input type="text" class="form-control" placeholder="Busca tu retrato de interes...">
-                        </div>
-                     </form>
                   </div>
                   <div class="col-md-8 col-sm-12">
                      <div class="right-nav">
@@ -34,7 +23,7 @@
                                  @if (Route::has('login'))
                                     @auth 
                                        <!--/.Requiere vista de perfil................................................................................................ --> 
-                                       <li><a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 underline">Mi perfil.</a></li>
+                                       <li><a href="{{ url('/Perfil') }}" class="text-sm text-gray-700 underline">Mi perfil.</a></li>
                                     @else
                                        <li><a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Log in</a></li>
                                        @if (Route::has('register'))
@@ -67,13 +56,6 @@
             <!--/.container-fluid --> 
          </nav>
       </header>
-      <div id="sidebar" class="top-nav">
-         <ul id="sidebar-nav" class="sidebar-nav">
-            <li><a href="#">Ayuda</a></li>
-            <li><a href="howitworks.html">How it works</a></li>
-            <li><a href="#">chamb for Business</a></li>
-         </ul>
-      </div>
       <div class="page-content-product">
          <div class="main-product">
             <div class="container">
@@ -468,31 +450,6 @@
                                  <li><a href="#">Terms of use</a></li>
                               </ul>
                            </div>
-                        </div>
-                     </div>
-                     <div class="col-md-6 col-sm-6">
-                        <div class="right-f-box">
-                           <h2>INDUSTRIES</h2>
-                           <ul class="col-sm-4">
-                              <li><a href="#">Textiles</a></li>
-                              <li><a href="#">Furniture</a></li>
-                              <li><a href="#">Leather</a></li>
-                              <li><a href="#">Agriculture</a></li>
-                              <li><a href="#">Food & drinks</a></li>
-                           </ul>
-                           <ul class="col-sm-4">
-                              <li><a href="#">Office</a></li>
-                              <li><a href="#">Decoratives</a></li>
-                              <li><a href="#">Electronics</a></li>
-                              <li><a href="#">Machines</a></li>
-                              <li><a href="#">Building</a></li>
-                           </ul>
-                           <ul class="col-sm-4">
-                              <li><a href="#">Cosmetics</a></li>
-                              <li><a href="#">Health</a></li>
-                              <li><a href="#">Jewelry</a></li>
-                              <li><a href="#">See all here</a></li>
-                           </ul>
                         </div>
                      </div>
                   </div>
