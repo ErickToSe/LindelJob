@@ -22,7 +22,13 @@ Route::get('/Sobre-Nosotros', function () {
     return view('about-us');
 });
 
+Route::get('/Tienda', function () {
+    return view('store');
+});
 
+Route::get('/Tienda', function () {
+    return view('store');
+});
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
